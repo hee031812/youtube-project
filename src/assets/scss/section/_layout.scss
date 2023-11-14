@@ -5,7 +5,7 @@
     width: 260px;
     height: 100vh;
     z-index: 10000;
-    background-color: #d9e5f8;
+    background-color: #e8f0fdc2;
 }
 
 #main {
@@ -33,5 +33,16 @@
             @include underline;
             text-decoration-color: var(--black300);
         }
+    }
+}
+
+@media(max-width:800px) {
+    #header {
+        left: -250px;
+
+    }
+
+    #main {
+        padding-left: 0;
     }
 }

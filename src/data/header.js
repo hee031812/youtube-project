@@ -1,11 +1,11 @@
-import { MdLocationOn } from 'react-icons/md';
-import { MdAirplanemodeActive } from 'react-icons/md';
-import { MdOutlineMapsHomeWork } from 'react-icons/md';
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { SiNaver } from "react-icons/si";
 import { RxLinkNone2 } from "react-icons/rx";
 import { RiHomeHeartLine } from "react-icons/ri";
+import { FaYoutube } from "react-icons/fa6";
+import { FaRegThumbsUp } from "react-icons/fa6";
+
 
 
 
@@ -15,13 +15,13 @@ export const menuText = [
         icon: <RiHomeHeartLine />,
         src: "/"
     }, {
-        title: "오늘의 여행지",
-        icon: <MdLocationOn />,
-        src: "/Today"
+        title: "오늘의 추천픽",
+        icon: <FaRegThumbsUp />,
+        src: "/today"
     }, {
-        title: "오늘의 숙소",
-        icon: <MdOutlineMapsHomeWork />,
-        src: "/Youtuber"
+        title: "유명 유튜버 모음",
+        icon: <FaYoutube />,
+        src: "/traveler"
     }
 ]
 
