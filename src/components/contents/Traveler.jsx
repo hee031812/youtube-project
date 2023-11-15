@@ -30,19 +30,19 @@ const Traveler = () => {
                             spaceBetween: 20,
                         },
                         400: {
-                            slidesPerView: 3,
+                            slidesPerView: 2,
                             spaceBetween: 20,
                         },
                         600: {
-                            slidesPerView: 4,
+                            slidesPerView: 3,
                             spaceBetween: 20,
                         },
                         960: {
-                            slidesPerView: 5,
+                            slidesPerView: 4,
                             spaceBetween: 20,
                         },
                         1200: {
-                            slidesPerView: 6,
+                            slidesPerView: 5,
                             spaceBetween: 20,
                         },
                         1600: {

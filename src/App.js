@@ -7,6 +7,8 @@ import Home from './pages/Home'
 import Today from './pages/Today'
 import Traveler from './pages/Traveler'
 import Channel from './pages/Channel'
+import Search from './pages/Search'
+
 
 const App = () => {
   return (
@@ -18,6 +20,7 @@ const App = () => {
           <Route path="/today" element={<Today />} />
           <Route path="/traveler" element={<Traveler />} />
           <Route path="/channel/:channelId" element={<Channel />} />
+          <Route path="/search/:searchId" element={<Search />} />
         </Routes>
       </Main>
       <Footer />
