@@ -9,12 +9,12 @@ const formatDate = (dateString) => {
     return `${year}-${month}-${day}`;
 }
 
-const VideoSearch = ({ videos }) => {
+const VideoSearch = ({ videos, layout = '' }) => {
     return (
         <>
             {videos.map((video, key) => (
-                <div className="video" key={key}>
-                    <div className="video__thumb">
+                <div className={`video ${layout}`} key={key}>
+                    <div className="video__thumb play__icon">
                         <Link
                             to={`/video/${video.id.videoId}`}
                             style={{ backgroundImage: `url(${video.snippet.thumbnails.high.url})` }}
