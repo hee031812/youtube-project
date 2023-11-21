@@ -71,7 +71,7 @@
                 padding: 1.4rem 2rem 1rem 2.9rem;
                 border-radius: 10px;
                 position: relative;
-                background-color: #b3ccf7;
+                background-color: #c3d5f5;
                 transition: all 0.2s;
                 border: 1px solid #b3ccf7;
 
@@ -152,5 +152,23 @@
             height: 20px;
         }
     }
+}
 
+@media (max-width:800px) {
+    .header__logo a em {
+        position: fixed;
+        left: 20px;
+        top: 20px;
+    }
+
+    #header.show {
+        display: block;
+        transition: all 0.3s ease-in;
+
+        .header__logo a em {
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+    }
 }

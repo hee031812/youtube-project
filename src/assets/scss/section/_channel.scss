@@ -75,7 +75,47 @@
 
     .channel__video {}
 
-    .channel__more {}
+    .channel__more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        button {
+            cursor: pointer;
+            background-color: #87abe3;
+            width: 120px;
+            height: 40px;
+            border-radius: 20px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding-top: 5px;
+            font-size: 15px;
+            color: #fff;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background-color: #78a0e4;
+            transition: all 0.2s ease-out;
+        }
+
+        button:after {
+            content: "";
+            display: inline-block;
+            width: 0.5rem;
+            height: 0.6rem;
+            margin-left: 0.3rem;
+            border-top: 0.1rem solid #ffffff;
+            border-right: 0.1rem solid #ffffff;
+            transform: rotate(45deg);
+            margin-bottom: 7px;
+
+            padding-left: 9px;
+        }
+    }
 }
 
 .video.channel {

@@ -54,3 +54,14 @@ section {
         }
     }
 }
+
+.isLoading {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.isLoaded {
+    opacity: 1;
+    transition: opacity 1s;
+
+}
