@@ -8,9 +8,6 @@ import { CiViewList } from "react-icons/ci";
 import Main from '../components/section/Main';
 
 
-
-
-
 const Channel = () => {
     const { channelId } = useParams();
     const [channelDetail, setChannelDetail] = useState();

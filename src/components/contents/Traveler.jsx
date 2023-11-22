@@ -15,8 +15,8 @@ const Traveler = () => {
             <h2>🙋‍♀️여행 유튜버 모음</h2>
             <div className="traveler__inner">
                 <Swiper
-                    slidesPerView={9}
-                    spaceBetween={20}
+                    slidesPerView={7}
+                    spaceBetween={50}
                     navigation={true}
                     modules={[Autoplay, Navigation]}
                     className="mySwiper"
@@ -35,19 +35,23 @@ const Traveler = () => {
                         },
                         600: {
                             slidesPerView: 3,
-                            spaceBetween: 20,
+                            spaceBetween: 10,
                         },
                         960: {
                             slidesPerView: 4,
-                            spaceBetween: 20,
+                            spaceBetween: 10,
                         },
                         1200: {
                             slidesPerView: 5,
                             spaceBetween: 20,
                         },
+                        1400: {
+                            slidesPerView: 5,
+                            spaceBetween: 40,
+                        },
                         1600: {
                             slidesPerView: 7,
-                            spaceBetween: 20,
+                            spaceBetween: 55,
                         },
                     }}
 
