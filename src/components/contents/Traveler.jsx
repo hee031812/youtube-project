@@ -27,31 +27,31 @@ const Traveler = () => {
                     breakpoints={{
                         100: {
                             slidesPerView: 2,
-                            spaceBetween: 20,
+                            spaceBetween: 15,
                         },
                         400: {
-                            slidesPerView: 2,
-                            spaceBetween: 20,
+                            slidesPerView: 3,
+                            spaceBetween: 15,
                         },
                         600: {
-                            slidesPerView: 3,
-                            spaceBetween: 10,
+                            slidesPerView: 4,
+                            spaceBetween: 20,
                         },
                         960: {
-                            slidesPerView: 4,
-                            spaceBetween: 10,
+                            slidesPerView: 5,
+                            spaceBetween: 20,
                         },
                         1200: {
-                            slidesPerView: 5,
+                            slidesPerView: 6,
                             spaceBetween: 20,
                         },
                         1400: {
-                            slidesPerView: 5,
-                            spaceBetween: 40,
+                            slidesPerView: 7,
+                            spaceBetween: 20,
                         },
                         1600: {
-                            slidesPerView: 7,
-                            spaceBetween: 55,
+                            slidesPerView: 8,
+                            spaceBetween: 20,
                         },
                     }}
 
@@ -59,7 +59,7 @@ const Traveler = () => {
                     {travelerText.map((traveler, key) => (
                         <SwiperSlide className="traveler" key={key}>
                             <div className="traveler__img">
-                                <Link>
+                                <Link to={`/channel/${traveler.channelId}`}>
                                     <img src={traveler.img} alt={traveler.author} />
                                 </Link>
                             </div>

@@ -2,96 +2,20 @@
 .swiper-button-next {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    margin-top: -50px;
-    right: 0;
+    margin-top: -55px;
+    border-radius: 20px;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-    color: var(--maincolor);
-    font-size: 20px;
+.swiper-button-prev {
+    left: 0 !important;
 }
 
-.traveler__inner {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-
-    .traveler {
-        border: 1px solid #d1ddf0c2;
-        background-color: #d1ddf0c2;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-
-
-        .traveler__img {
-            border-radius: 50%;
-            overflow: hidden;
-        }
-
-        .traveler__info {
-            text-align: center;
-            padding-top: 5px;
-            margin-top: 15px;
-            background-color: #fff;
-            border-radius: 5px;
-
-        }
-    }
+.swiper-button-next {
+    right: 0 !important;
 }
 
-#travelerPage {
-
-    .traveler__inner {
-        .traveler {
-            margin-right: 20px;
-
-            .traveler__img {
-                width: 150px;
-                height: 150px;
-            }
-        }
-    }
-
-    @media(max-width: 800px) {
-        .traveler__inner {
-            justify-content: space-between;
-
-            .traveler {
-                width: 2%;
-                margin-right: 0;
-
-                .traveler__img {
-
-                    width: 100%;
-                    height: auto;
-
-                }
-            }
-        }
-    }
-
-    @media(max-width: 600px) {
-        .traveler__inner {
-            justify-content: space-between;
-
-            .traveler {
-                width: 31%;
-            }
-        }
-    }
-
-    @media(max-width: 400px) {
-        .traveler__inner {
-            justify-content: space-between;
-
-            .traveler {
-                width: 48%;
-            }
-        }
-    }
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    color: #fff;
+    font-size: 16px !important;
 }

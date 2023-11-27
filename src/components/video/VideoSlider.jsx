@@ -20,7 +20,7 @@ const VideoSlider = ({ name, videos, title }) => {
             <h2>{title}</h2>
             <div className="video__slider">
                 <Swiper
-                    slidesPerView={8}
+                    slidesPerView={9}
                     spaceBetween={20}
                     navigation={true}
                     modules={[Navigation]}
@@ -43,15 +43,15 @@ const VideoSlider = ({ name, videos, title }) => {
                             spaceBetween: 20,
                         },
                         960: {
-                            slidesPerView: 4,
+                            slidesPerView: 6,
                             spaceBetween: 20,
                         },
                         1200: {
-                            slidesPerView: 5,
+                            slidesPerView: 7,
                             spaceBetween: 20,
                         },
                         1600: {
-                            slidesPerView: 7,
+                            slidesPerView: 8,
                             spaceBetween: 20,
                         },
                     }}
