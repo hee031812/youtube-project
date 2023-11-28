@@ -51,7 +51,7 @@ const VideoSlider = ({ name, videos, title }) => {
                             spaceBetween: 20,
                         },
                         1600: {
-                            slidesPerView: 8,
+                            slidesPerView: 7,
                             spaceBetween: 20,
                         },
                     }}

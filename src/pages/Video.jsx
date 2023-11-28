@@ -11,7 +11,17 @@ const Video = () => {
 
     const { videoId } = useParams();
     const [videoDetail, setVideoDetail] = useState(null);
-    // const [comments, setComments] = useState([]);
+    const [comments, setComments] = useState([]);
+
+    const [showAllComments, setShowAllComments] = useState(false); // State to track whether to show all comments
+
+    const handleViewCommentsClick = () => {
+        // Toggle the state to show/hide all comments
+        setShowAllComments(!showAllComments);
+    };
+
+
+
 
 
     useEffect(() => {
@@ -20,7 +30,13 @@ const Video = () => {
                 console.log(data)
                 setVideoDetail(data.items[0]);
             })
-    }, [videoId])
+        // 비디오 comment
+        fetchFromAPI(`commentThreads?part=snippet&videoId=${videoId}`)
+            .then((data) => {
+                const extractedComments = data.items.map((item) => item.snippet.topLevelComment.snippet.textOriginal);
+                setComments(extractedComments);
+            });
+    }, [videoId]);
 
     return (
         <Main
@@ -55,8 +71,30 @@ const Video = () => {
                                 {videoDetail.snippet.description}
                                 {videoDetail.snippet.description}
                             </div>
+                            <ul className='comments'>
+                                <h3>댓글</h3>
+                                {showAllComments
+                                    ? comments.map((comment, index) => (
+                                        <li key={index}>
+                                            {comment}
+                                        </li>
+                                    ))
+
+                                    : comments.slice(0, 5).map((comment, index) => (
+                                        <li key={index}>
+                                            {comment}
+                                        </li>
+                                    ))}
+                            </ul>
+
+                            {!showAllComments && comments.length > 5 && (
+                                <button onClick={handleViewCommentsClick} className='comment__more' >
+                                    댓글 더보기
+                                </button>
+                            )}
                         </div>
                     </div>
+
                 )}
 
             </section>
